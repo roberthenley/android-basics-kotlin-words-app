@@ -12,8 +12,6 @@ import com.example.wordsapp.databinding.FragmentWordListBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [WordListFragment.newInstance] factory method to
- * create an instance of this fragment.
  */
 class WordListFragment : Fragment() {
     private var _binding: FragmentWordListBinding? = null
@@ -45,9 +43,6 @@ class WordListFragment : Fragment() {
         recyclerView.addItemDecoration(
             DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         )
-
-//        title = getString(R.string.detail_prefix) + " " + letterId
-
     }
 
     override fun onDestroyView() {
